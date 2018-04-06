@@ -1,0 +1,11 @@
+RF01 - O sistema deve manter cadastro do usuário no servidor.
+RF02 - O sistema deve permitir alteração e exclusão do cadastro do usuário.
+RF03 - O sistema deve manter registro de animais encontrados no servidor.
+RF04 - O sistema deve manter registro de animais perdidos no servidor.
+RF05 - O sistema deve mostrar no mapa a localização dos animais perdidos.
+
+RNF01 - O sistema deverá estar disponível para a plataforma Android.
+RNF02 - O banco de dados do servidor será em MySQL.
+RNF03 - Os registros de animais encontrados e perdidos deverá conter foto.
+RNF04 - O sistema deverá excluir os registros de animais encontrados após determinado tempo.
+RNF05 - O sistema deverá estar disponível o tempo todo.
