@@ -1,0 +1,46 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from WebServiceService WSDL service -->
+
+  <service name="WebService" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://webservice"/>
+      <parameter name="wsdlServiceElement" value="WebServiceService"/>
+      <parameter name="schemaQualified" value="http://webservice"/>
+      <parameter name="wsdlServicePort" value="WebService"/>
+      <parameter name="className" value="webservice.WebServiceSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="WebService"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="novoUsuarioSenha" qname="operNS:novoUsuarioSenha" xmlns:operNS="http://webservice" returnQName="retNS:novoUsuarioSenhaReturn" xmlns:retNS="http://webservice" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:usuario" xmlns:pns="http://webservice" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:senha" xmlns:pns="http://webservice" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:nivel" xmlns:pns="http://webservice" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="editarUsuarioSenha" qname="operNS:editarUsuarioSenha" xmlns:operNS="http://webservice" returnQName="retNS:editarUsuarioSenhaReturn" xmlns:retNS="http://webservice" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:usuario" xmlns:pns="http://webservice" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:senha" xmlns:pns="http://webservice" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:nivel" xmlns:pns="http://webservice" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:idUsuario" xmlns:pns="http://webservice" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="selecionaUsuarioSenhas" qname="operNS:selecionaUsuarioSenhas" xmlns:operNS="http://webservice" returnQName="retNS:selecionaUsuarioSenhasReturn" xmlns:retNS="http://webservice" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="removeUsuarioSenha" qname="operNS:removeUsuarioSenha" xmlns:operNS="http://webservice" returnQName="retNS:removeUsuarioSenhaReturn" xmlns:retNS="http://webservice" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:idUsuario" xmlns:pns="http://webservice" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <operation name="testaUsuarioSenha" qname="operNS:testaUsuarioSenha" xmlns:operNS="http://webservice" returnQName="retNS:testaUsuarioSenhaReturn" xmlns:retNS="http://webservice" returnType="rtns:boolean" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:usuario" xmlns:pns="http://webservice" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:senha" xmlns:pns="http://webservice" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="novoUsuarioSenha editarUsuarioSenha removeUsuarioSenha testaUsuarioSenha selecionaUsuarioSenhas"/>
+
+  </service>
+</deployment>

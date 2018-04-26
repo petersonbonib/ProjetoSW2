@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://webservice" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://webservice" xmlns:intf="http://webservice" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://webservice" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="novoUsuarioSenha">
+    <complexType>
+     <sequence>
+      <element name="usuario" type="xsd:string"/>
+      <element name="senha" type="xsd:string"/>
+      <element name="nivel" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="novoUsuarioSenhaResponse">
+    <complexType>
+     <sequence>
+      <element name="novoUsuarioSenhaReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="editarUsuarioSenha">
+    <complexType>
+     <sequence>
+      <element name="usuario" type="xsd:string"/>
+      <element name="senha" type="xsd:string"/>
+      <element name="nivel" type="xsd:int"/>
+      <element name="idUsuario" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="editarUsuarioSenhaResponse">
+    <complexType>
+     <sequence>
+      <element name="editarUsuarioSenhaReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="selecionaUsuarioSenhas">
+    <complexType/>
+   </element>
+   <element name="selecionaUsuarioSenhasResponse">
+    <complexType>
+     <sequence>
+      <element name="selecionaUsuarioSenhasReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="removeUsuarioSenha">
+    <complexType>
+     <sequence>
+      <element name="idUsuario" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="removeUsuarioSenhaResponse">
+    <complexType>
+     <sequence>
+      <element name="removeUsuarioSenhaReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="testaUsuarioSenha">
+    <complexType>
+     <sequence>
+      <element name="usuario" type="xsd:string"/>
+      <element name="senha" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="testaUsuarioSenhaResponse">
+    <complexType>
+     <sequence>
+      <element name="testaUsuarioSenhaReturn" type="xsd:boolean"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="selecionaUsuarioSenhasResponse">
+
+      <wsdl:part element="impl:selecionaUsuarioSenhasResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="selecionaUsuarioSenhasRequest">
+
+      <wsdl:part element="impl:selecionaUsuarioSenhas" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="editarUsuarioSenhaRequest">
+
+      <wsdl:part element="impl:editarUsuarioSenha" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeUsuarioSenhaRequest">
+
+      <wsdl:part element="impl:removeUsuarioSenha" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="editarUsuarioSenhaResponse">
+
+      <wsdl:part element="impl:editarUsuarioSenhaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="testaUsuarioSenhaResponse">
+
+      <wsdl:part element="impl:testaUsuarioSenhaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="removeUsuarioSenhaResponse">
+
+      <wsdl:part element="impl:removeUsuarioSenhaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="testaUsuarioSenhaRequest">
+
+      <wsdl:part element="impl:testaUsuarioSenha" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="novoUsuarioSenhaRequest">
+
+      <wsdl:part element="impl:novoUsuarioSenha" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="novoUsuarioSenhaResponse">
+
+      <wsdl:part element="impl:novoUsuarioSenhaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="WebService">
+
+      <wsdl:operation name="novoUsuarioSenha">
+
+         <wsdl:input message="impl:novoUsuarioSenhaRequest" name="novoUsuarioSenhaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:novoUsuarioSenhaResponse" name="novoUsuarioSenhaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="editarUsuarioSenha">
+
+         <wsdl:input message="impl:editarUsuarioSenhaRequest" name="editarUsuarioSenhaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:editarUsuarioSenhaResponse" name="editarUsuarioSenhaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="selecionaUsuarioSenhas">
+
+         <wsdl:input message="impl:selecionaUsuarioSenhasRequest" name="selecionaUsuarioSenhasRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:selecionaUsuarioSenhasResponse" name="selecionaUsuarioSenhasResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeUsuarioSenha">
+
+         <wsdl:input message="impl:removeUsuarioSenhaRequest" name="removeUsuarioSenhaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:removeUsuarioSenhaResponse" name="removeUsuarioSenhaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="testaUsuarioSenha">
+
+         <wsdl:input message="impl:testaUsuarioSenhaRequest" name="testaUsuarioSenhaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:testaUsuarioSenhaResponse" name="testaUsuarioSenhaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="WebServiceSoapBinding" type="impl:WebService">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="novoUsuarioSenha">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="novoUsuarioSenhaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="novoUsuarioSenhaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="editarUsuarioSenha">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="editarUsuarioSenhaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="editarUsuarioSenhaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="selecionaUsuarioSenhas">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="selecionaUsuarioSenhasRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="selecionaUsuarioSenhasResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="removeUsuarioSenha">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="removeUsuarioSenhaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="removeUsuarioSenhaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="testaUsuarioSenha">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="testaUsuarioSenhaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="testaUsuarioSenhaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="WebServiceService">
+
+      <wsdl:port binding="impl:WebServiceSoapBinding" name="WebService">
+
+         <wsdlsoap:address location="http://localhost:8080/PetsFinder/services/WebService"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
