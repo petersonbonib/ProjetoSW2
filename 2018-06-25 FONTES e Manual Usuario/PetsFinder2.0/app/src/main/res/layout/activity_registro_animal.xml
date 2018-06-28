@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroAnimalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#b3ecff"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tb_registro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_blue_400"></android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="50dp">
+
+            <EditText
+                android:id="@+id/edAnimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="Animal"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="Nome do pet"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edRaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="Raca"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edColeira"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="Coleira"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edDono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:ems="10"
+                android:hint="Dono"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/edTelefone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:ems="10"
+                android:hint="Telefone"
+                android:inputType="phone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtCor"
+                    android:layout_width="313dp"
+                    android:layout_height="40dp"
+                    android:background="#5364c8"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="Cor pêlos / penas"
+                    android:textColor="@android:color/white"
+                    android:textSize="17dp"
+                    tools:background="#5364c8" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="#5364c8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="119dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnImagem"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:background="#5364c8"
+                    android:text="Carregar Imagem"
+                    android:textColor="@android:color/white" />
+
+                <ImageView
+                    android:id="@+id/imgAnimal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:srcCompat="@mipmap/ic_launcher" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnConcluir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#5364c8"
+                android:text="Concluir"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
