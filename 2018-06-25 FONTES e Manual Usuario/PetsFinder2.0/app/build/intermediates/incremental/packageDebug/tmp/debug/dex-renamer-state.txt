@@ -1,0 +1,4 @@
+#Thu Jun 28 21:20:56 BRT 2018
+base.0=C\:\\Users\\Administrador\\Desktop\\PSW2\\trunk\\2018-06-25 FONTES e Manual Usuario\\PetsFinder2.0\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Thu Jun 28 21:20:59 BRT 2018
+1.base=C\:\\Users\\Administrador\\Desktop\\PSW2\\trunk\\2018-06-25 FONTES e Manual Usuario\\PetsFinder2.0\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=fonts/materialdrawerfont-font-v5.0.0.ttf
+0.set=ASSET
+0.base=C\:\\Users\\Administrador\\Desktop\\PSW2\\trunk\\2018-06-25 FONTES e Manual Usuario\\PetsFinder2.0\\app\\build\\intermediates\\assets\\debug
+1.path=classes.dex
