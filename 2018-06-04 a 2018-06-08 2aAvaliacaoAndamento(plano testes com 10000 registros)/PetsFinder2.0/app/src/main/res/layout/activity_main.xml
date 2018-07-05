@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3ecff"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="37dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/edEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dog" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="281dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginStart="52dp"
+        android:ems="10"
+        android:hint="pet@email.com"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/edSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edSenha"
+        android:layout_width="281dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="35dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginStart="52dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/btnEntrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEntrar"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="97dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginStart="51dp"
+        android:background="#5364c8"
+        android:text="Entrar"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCriarConta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69dp"
+        android:layout_marginTop="15dp"
+        android:onClick="abrirCadastroUsuario"
+        android:text="Não tem conta? Cadastre-se"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrar" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "310159002679",
+    "firebase_url": "https://petsfinder-d9b91.firebaseio.com",
+    "project_id": "petsfinder-d9b91",
+    "storage_bucket": "petsfinder-d9b91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310159002679:android:6f8dde4f8ab9ca24",
+        "android_client_info": {
+          "package_name": "com.ps2.petsfinder.petsfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310159002679-5sv9927b9c7k8mdtnchn4gj6m1e9go9i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ps2.petsfinder.petsfinder",
+            "certificate_hash": "7ec218137a48ea4101ad0262ca69dbf70bf3b40c"
+          }
+        },
+        {
+          "client_id": "310159002679-bcsl75hdvg1sh9mo3lgffo8t0ihhqp55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAndnDsrLSzKUAUDXlctERtSSeue4fSY60"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310159002679-bcsl75hdvg1sh9mo3lgffo8t0ihhqp55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,4 @@
+#Wed Jun 20 01:55:42 BRT 2018
+base.0=C\:\\Users\\Administrador\\AndroidStudioProjects\\PetsFinder2.0\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\137
+path.0=classes.dex
+renamed.0=classes.dex
